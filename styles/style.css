@@ -4,3 +4,247 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #215070;
+    --secondary-color: #afc93b;
+    --accent-color: #5b57ae;
+    --background-color: #282626;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: beige;
+}
+
+/* HEADER */
+.header{
+    background-color: var(--accent-color);
+    color: aliceblue;
+}
+
+.author-info{
+    display: flex;
+    gap: 2rem;
+    padding-block: 10px;
+    padding-left: 10px;
+}
+
+.author-info h2{
+    align-self: center;
+    font-size: 36px;
+}
+
+#menu {
+	font-size: 40px;
+	border: 0;
+	background: none;
+	color: #ffffff;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+    /* en media queria cambiar row */
+    align-items: flex-start;
+    max-width: 100%;
+	list-style: none;
+	background-color: var(--accent-color);
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color:var(--primary-color);
+	color: #ffffff;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+/* MAIN */
+.section-course{
+    background-color: rgb(226, 222, 222);
+    margin: 20px;
+    box-shadow: 9px 10px 9px -7px rgba(0,0,0,0.52);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.title-course{
+    background-color: #5b57ae;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.list-course{
+    margin: 30px;
+}
+
+.list-c{
+    list-style-type: disc;
+}
+
+.list-course li{
+    margin-left: 10px;
+    padding: 15px;
+}
+
+/* SECOND SECTION */
+.info-country{
+    background-color: rgb(226, 222, 222);
+    margin: 20px;
+    box-shadow: 9px 10px 9px -7px rgba(0,0,0,0.52);
+    border-radius: 5px;
+}
+
+.title-country{
+    background-color: #5b57ae;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.img-country{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+    margin: 20px;     
+}
+
+.title-img-country{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* THIRD SECTION */
+.info-courses{
+    background-color: rgb(226, 222, 222);
+    margin: 20px;
+    box-shadow: 9px 10px 9px -7px rgba(0,0,0,0.52);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.title-certificates{
+    background-color: #5b57ae;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.button-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    gap: 10px;
+}
+
+.label{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    border: 1px solid #999;
+}
+
+.label.small{
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.label.bg-black{
+    background-color: #282626;
+    color: aliceblue;
+}
+
+.label.bg-secondary{
+    background-color: #2e2c51;
+    color: aliceblue;
+}
+
+#courses{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* FOOTER */
+.footer{
+    background-color: var(--accent-color);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    gap: 10px;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.info-author{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flag-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

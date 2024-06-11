@@ -6,43 +6,55 @@
     <meta name="author" content="Marcela Vargas" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
     <script src="./scripts/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="./images/#" alt="img-profile" />
-        <h1>Marcela Vargas</h1>
+    <header class="header">
+      <div class="author-info">
+        <img src="./images/profile.jpg" alt="img-profile" width="100" height="100"/>
+        <h2>Lilian Marcela Vargas</h2>
       </div>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#">Chamber</a></li>
-          <li>
-            <a href="https://github.com/MarcelaVargasR">GitHub Profile</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/marcela-vargas-24a674152/"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <button id="menu"></button>
+      <nav class="navigation">
+        <a href="./index.html" title="Home">Home</a>
+        <a href="#" title="Chamber" class="active">Chamber</a>
+        <a href="https://github.com/MarcelaVargasR" title="github-profile">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/marcela-vargas-24a674152/" title="linkedin">LinkedIn</a>
+        </nav>
     </header>
     <main>
-      <section>
-        <span>Course Work</span>
-      </section>
-      <section>
-        <span>El Salvador, San Salvador</span>
-        <div>
-          <img src="./images/#" alt="img-profile" />
-          <p>Lorem ipsum dolor sit.</p>
+      <section class="section-course">
+        <div class="title-course">
+            <span>Course Work</span>
+        </div>
+        <div class="list-course">
+        <ul class="list-c">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
         </div>
       </section>
-      <section>
+      <section class="info-country">
+        <div class="title-country">
+        <span>El Salvador, San Salvador</span>
+        </div>
+        <div class="img-country">
+          <img src="./images/maquilishuat-tree.jpg" alt="img-profile" width="300" height="300" />
+          <p class="title-img-country">Maquilishuat Tree</p>
+        </div>
+      </section>
+      <section class="info-courses">
+        <div class="title-certificates">
         <span>Web and Computer Programming Certificate</span>
-        <div id="filters">
+        </div>
+        <div class="button-info" id="filters">
           <button class="label small bg-black">All</button>
           <button class="label small bg-black">CSE</button>
           <button class="label small bg-black">WDD</button>
@@ -59,18 +71,17 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>
-        <span id="currentyear"></span>
-        <span>Marcela Vargas</span>
-        <div>
+    <footer class="footer">
+      <p class="info-author">
+        <span id="currentyear">©</span>
+        <span class="name-author"> <img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25"> Lilian Marcela Vargas <img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25"></span>
+
+        <div class="flag-info">
         <span>El Salvador</span>
-        <span>
-            <img src="#" alt="flat">
-        </span>    
+        <img src="./images/Flag_of_El_Salvador.svg.png" alt="flat" width="60" height="30">
         </div>
       </p>
-      <p id="lastModified"></p>
+      <p id="lastModified">Last Update:</p>
     </footer>
   </body>
 </html>
