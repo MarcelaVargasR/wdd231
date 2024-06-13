@@ -6,18 +6,12 @@
     <meta name="author" content="Marcela Vargas" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
-      crossorigin="anonymous"
-    />
     <script src="./scripts/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="author-info">
-        <img src="./images/profile.jpg" alt="img-profile" width="100" height="100"/>
+        <img src="./images/profile.webp" alt="img-profile" width="100" height="100"/>
         <h2>Lilian Marcela Vargas</h2>
       </div>
       <button id="menu"></button>
@@ -29,27 +23,29 @@
         </nav>
     </header>
     <main>
-      <section class="section-course">
-        <div class="title-course">
-            <span>Course Work</span>
+        <div class="grid">
+            <section class="section-course">
+                <div class="title-course">
+                    <span>Course Work</span>
+                </div>
+                <div class="list-course">
+                <ul class="list-c">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+              </section>
+              <section class="info-country">
+                <div class="title-country">
+                <span>El Salvador, San Salvador</span>
+                </div>
+                <div class="img-country">
+                  <img src="./images/maquilishuat-tree.webp" alt="img-profile" width="300" height="300" />
+                  <p class="title-img-country">Maquilishuat Tree</p>
+                </div>
+              </section>  
         </div>
-        <div class="list-course">
-        <ul class="list-c">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        </div>
-      </section>
-      <section class="info-country">
-        <div class="title-country">
-        <span>El Salvador, San Salvador</span>
-        </div>
-        <div class="img-country">
-          <img src="./images/maquilishuat-tree.jpg" alt="img-profile" width="300" height="300" />
-          <p class="title-img-country">Maquilishuat Tree</p>
-        </div>
-      </section>
       <section class="info-courses">
         <div class="title-certificates">
         <span>Web and Computer Programming Certificate</span>
@@ -61,26 +57,29 @@
         </div>
         <div>
           <ul id="courses">
-            <li class="label bg-secondary">CSE 110</li>
+            <!-- <li class="label bg-secondary">CSE 110</li>
             <li class="label bg-secondary">WDD 130</li>
             <li class="label bg-secondary">CSE 111</li>
             <li class="label">CSE 210</li>
             <li class="label bg-secondary">WDD 131</li>
-            <li class="label">WDD 231</li>
+            <li class="label">WDD 231</li> -->
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="info-author">
-        <span id="currentyear">©</span>
-        <span class="name-author"> <img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25"> Lilian Marcela Vargas <img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25"></span>
+        <div class="footer-p-author">
+            <p class="info-author">
+                <span id="currentyear">© 2024</span>
+                <span class="name-author"> <img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25">Lilian Marcela Vargas<img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25"></span>
+                <div class="flag-info">
+                <span>El Salvador</span>
+                <img src="./images/Flag_of_El_Salvador.webp" alt="flat" width="60" height="30">
+                </div>
+              </p>
 
-        <div class="flag-info">
-        <span>El Salvador</span>
-        <img src="./images/Flag_of_El_Salvador.svg.png" alt="flat" width="60" height="30">
         </div>
-      </p>
+      
       <p id="lastModified">Last Update:</p>
     </footer>
   </body>

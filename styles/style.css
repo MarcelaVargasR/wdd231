@@ -29,6 +29,11 @@ body{
     padding-left: 10px;
 }
 
+.author-info img{
+    box-shadow: 11px 15px 11px -9px rgba(0,0,0,0.52);
+    border-radius: 5px;
+}
+
 .author-info h2{
     align-self: center;
     font-size: 36px;
@@ -55,7 +60,6 @@ body{
 .navigation {
 	display: flex;
 	flex-direction: column;
-    /* en media queria cambiar row */
     align-items: flex-start;
     max-width: 100%;
 	list-style: none;
@@ -247,4 +251,77 @@ ul{
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+@media (min-width: 768px){
+    #menu {
+		display: none;
+	}
+
+    .author-info{
+        justify-content: center;
+    }
+
+	.navigation {
+		flex-direction: row;
+        font-size: 18px;
+        background-color: #2e2c51;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    .navigation a:hover {
+        background-color:#2e2c51;
+        color:#afc93b;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section-course{
+        grid-column: span 2;
+    }
+
+    .button-info{
+        max-width: 40%;
+        margin-inline: auto;
+
+    }
+
+    #courses{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #courses li{
+        width: 30%;
+    }
+
+    /* FOOTER */
+   .footer-p-author{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .info-author{
+    flex-direction: row;
+   }
+
+
+    
 }
