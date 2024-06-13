@@ -109,15 +109,55 @@ const coursesData = [
   },
 ];
 
-const courses = document.getElementById("courses");
-const coursesHtml = coursesData
-  .map((course) => {
-    if (course.completed == true) {
-      return `<li class="label bg-secondary">${course.subject} ${course.number}</li>`;
-    } else {
-      return `<li class="label">${course.subject} ${course.number}</li>`;
-    }
-  })
-  .join("");
+function renderCourses(_coursesData) {
+  const courses = document.getElementById("courses");
+  const totalCredits = document.getElementById("total-credits");
+  const coursesHtml = _coursesData
+    .map((course) => {
+      if (course.completed == true) {
+        return `<li class="label bg-secondary">${course.subject} ${course.number}</li>`;
+      } else {
+        return `<li class="label">${course.subject} ${course.number}</li>`;
+      }
+    })
+    .join("");
 
-courses.innerHTML = coursesHtml;
+  courses.innerHTML = coursesHtml;
+
+  const totalCreditsRequired = _coursesData.reduce((total, course) => total + course.credits, 0);
+  totalCredits.innerHTML = totalCreditsRequired;
+
+}
+
+renderCourses(coursesData);
+
+// /////////////////////////////////////////////////////////////////////////////
+// FILTER COURSES
+const filterContainer = document.getElementById("filters");
+
+// map the buttons
+filterContainer.addEventListener("click", (event) => {
+  if (event.target.id === "filters") {
+    return;
+  }
+
+  if (event.target.id === "filter-all") {
+    console.log("all");
+    renderCourses(coursesData);
+  }
+
+  if (event.target.id === "filter-cse") {
+    const filterCse = coursesData.filter((course)=>{
+      return course.subject === "CSE";
+    })
+    renderCourses(filterCse);
+  }
+
+  if (event.target.id === "filter-wdd") {
+    const filterWdd = coursesData.filter((course)=>{
+      return course.subject === "WDD";
+    })
+    renderCourses(filterWdd);
+  }
+});
+

@@ -221,6 +221,14 @@ ul{
     list-style-type: none;
 }
 
+.credits{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
 /* FOOTER */
 .footer{
     background-color: var(--accent-color);
