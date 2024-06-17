@@ -1,80 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Marcela Vargas">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marcela Vargas" />
+    <title>Lilian Marcela Vargas</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="Lilian Vargas Profile" />
+    <meta property="og:type" content="accurate" />
+    <meta
+      property="og:image"
+      content="http://127.0.0.1:5500/images/maquilishuat-tree.webp"
+    />
+    <meta
+      property="og:url"
+      content="http://euro-travel-example.com/index.htm"
+    />
     <script src="./scripts/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="author-info">
-        <img src="./images/profile.webp" alt="img-profile" width="100" height="100">
+        <img
+          src="./images/profile.webp"
+          alt="img-profile"
+          width="100"
+          height="100"
+        />
         <h2>Lilian Marcela Vargas</h2>
       </div>
       <button id="menu"></button>
       <nav class="navigation">
         <a href="./index.html" title="Home">Home</a>
         <a href="#" title="Chamber" class="active">Chamber</a>
-        <a href="https://github.com/MarcelaVargasR" title="github-profile">GitHub Profile</a>
-        <a href="https://www.linkedin.com/in/marcela-vargas-24a674152/" title="linkedin">LinkedIn</a>
-        </nav>
+        <a href="https://github.com/MarcelaVargasR" title="github-profile"
+          >GitHub Profile</a
+        >
+        <a
+          href="https://www.linkedin.com/in/marcela-vargas-24a674152/"
+          title="linkedin"
+          >LinkedIn</a
+        >
+      </nav>
     </header>
     <main>
-        <div class="grid">
-            <section class="section-course">
-                <div class="title-course">
-                    <span>Course Work</span>
-                </div>
-                <div class="list-course">
-                <ul class="list-c">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                </div>
-              </section>
-              <section class="info-country">
-                <div class="title-country">
-                <span>El Salvador, San Salvador</span>
-                </div>
-                <div class="img-country">
-                  <img src="./images/maquilishuat-tree.webp" alt="img-profile" width="300" height="300">
-                  <p class="title-img-country">Maquilishuat Tree</p>
-                </div>
-              </section>  
-        </div>
+      <div class="grid">
+        <section class="section-course">
+          <div class="title-course">
+            <span>Course Work</span>
+          </div>
+          <div class="list-course">
+            <ul class="list-c">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </section>
+        <section class="info-country">
+          <div class="title-country">
+            <span>El Salvador, San Salvador</span>
+          </div>
+          <div class="img-country">
+            <img
+              src="./images/maquilishuat-tree.webp"
+              alt="img-profile"
+              width="300"
+              height="300"
+            />
+            <p class="title-img-country">Maquilishuat Tree</p>
+          </div>
+        </section>
+      </div>
       <section class="info-courses">
         <div class="title-certificates">
-        <span>Web and Computer Programming Certificate</span>
+          <span>Web and Computer Programming Certificate</span>
         </div>
         <div class="button-info" id="filters">
-          <button id="filter-all" class="label small bg-black" aria-label="Show all courses">All</button>
-          <button id="filter-cse" class="label small bg-black" aria-label="Show CSE courses">CSE</button>
-          <button id="filter-wdd" class="label small bg-black"  aria-label="Show WDD courses">WDD</button>
+          <button
+            id="filter-all"
+            class="label small bg-black"
+            aria-label="Show all courses"
+          >
+            All
+          </button>
+          <button
+            id="filter-cse"
+            class="label small bg-black"
+            aria-label="Show CSE courses"
+          >
+            CSE
+          </button>
+          <button
+            id="filter-wdd"
+            class="label small bg-black"
+            aria-label="Show WDD courses"
+          >
+            WDD
+          </button>
         </div>
         <div>
-          <ul id="courses">
-          </ul>
+          <ul id="courses"></ul>
         </div>
         <p class="credits">Total Credits: <span id="total-credits"></span></p>
       </section>
     </main>
     <footer class="footer">
-        <div class="footer-p-author">
-          <p class="info-author">
-            <span id="currentyear">© 2024</span>
-            <span class="name-author"> <img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25">Lilian Marcela Vargas<img src="./images/flower-rose-svgrepo-com.svg" alt="icon-flower" width="25" height="25"></span>
-            <div class="flag-info">
-              <span>El Salvador</span>
-              <img src="./images/Flag_of_El_Salvador.webp" alt="flat" width="60" height="30">
-            </div>
-          </p>
+      <div class="footer-p-author">
+        <div class="info-author">
+          <span id="currentyear"></span>
+          <span class="name-author"
+            ><img
+              src="./images/flower-rose-svgrepo-com.svg"
+              alt="icon-flower"
+              width="25"
+              height="25" />Lilian Marcela Vargas<img
+              src="./images/flower-rose-svgrepo-com.svg"
+              alt="icon-flower"
+              width="25"
+              height="25"
+          /></span>
+          <div class="flag-info">
+            <span>El Salvador</span>
+            <img
+              src="./images/Flag_of_El_Salvador.webp"
+              alt="flat"
+              width="60"
+              height="30"
+            />
+          </div>
         </div>
-      <p id="lastModified">Last Update: </p>
+      </div>
+      <p id="lastModified">Last Updated:</p>
     </footer>
   </body>
 </html>
