@@ -12,7 +12,7 @@ hamButton.addEventListener("click", () => {
 // CURRENT YEAR
 const year = document.querySelector("#currentyear");
 const today = new Date();
-year.innerHTML = `© <span class="highlight">${today.getFullYear()} BuzzCo</span>`;
+year.innerHTML = `© <span class="highlight">${today.getFullYear()} BizzCo</span>`;
 
 // /////////////////////////////////////////////////////////////////////////////
 // LAST UPDATE
