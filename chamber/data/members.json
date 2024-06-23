@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Tech Solutions Inc.",
+    "address": "123 Innovation Drive, San Francisco, CA 94105",
+    "phone_number": "(415) 123-4567",
+    "website_url": "https://www.techsolutions.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 3,
+    "industry": "Technology",
+    "contact_person": "John Doe",
+    "email": "contact@techsolutions.com"
+  },
+  {
+    "name": "Green Earth Ltd.",
+    "address": "456 Eco Lane, Portland, OR 97205",
+    "phone_number": "(503) 765-4321",
+    "website_url": "https://www.greenearth.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 2,
+    "industry": "Environmental Services",
+    "contact_person": "Jane Smith",
+    "email": "info@greenearth.com"
+  },
+  {
+    "name": "Health Plus Inc.",
+    "address": "789 Wellness Blvd, Austin, TX 78701",
+    "phone_number": "(512) 987-6543",
+    "website_url": "https://www.healthplus.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 3,
+    "industry": "Healthcare",
+    "contact_person": "Emily Johnson",
+    "email": "support@healthplus.com"
+  },
+  {
+    "name": "EduWorld Corp.",
+    "address": "321 Knowledge St, Boston, MA 02118",
+    "phone_number": "(617) 654-3210",
+    "website_url": "https://www.eduworld.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 1,
+    "industry": "Education",
+    "contact_person": "Michael Lee",
+    "email": "info@eduworld.com"
+  },
+  {
+    "name": "Foodies United",
+    "address": "654 Gourmet Avenue, New York, NY 10001",
+    "phone_number": "(212) 111-2222",
+    "website_url": "https://www.foodiesunited.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 2,
+    "industry": "Food & Beverage",
+    "contact_person": "Laura Brown",
+    "email": "contact@foodiesunited.com"
+  },
+  {
+    "name": "AutoInnovate LLC",
+    "address": "987 Mechanics Way, Detroit, MI 48201",
+    "phone_number": "(313) 333-4444",
+    "website_url": "https://www.autoinnovate.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 3,
+    "industry": "Automotive",
+    "contact_person": "Robert Wilson",
+    "email": "support@autoinnovate.com"
+  },
+  {
+    "name": "Finance First",
+    "address": "111 Wall Street, New York, NY 10005",
+    "phone_number": "(212) 555-6789",
+    "website_url": "https://www.financefirst.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 1,
+    "industry": "Finance",
+    "contact_person": "Anna Davis",
+    "email": "info@financefirst.com"
+  },
+  {
+    "name": "Black key Tech.",
+    "address": "456 Eco Lane, Utah, UT 97205",
+    "phone_number": "(401) 765-4321",
+    "website_url": "https://www.blackteatech.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 2,
+    "industry": "Technology",
+    "contact_person": "Lucy Hannes",
+    "email": "info@blackkeytech.com"
+  },
+  {
+    "name": "Youth Tech",
+    "address": "111 Wall Street, Atlanta, AT 10005",
+    "phone_number": "(404) 555-6789",
+    "website_url": "https://www.youthtech.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 1,
+    "industry": "Technology",
+    "contact_person": "Richard Jhonnsen",
+    "email": "info@youthtech.com"
+  },
+  {
+    "name": "Youth Tech",
+    "address": "111 Wall Street, Atlanta, AT 10005",
+    "phone_number": "(404) 555-6789",
+    "website_url": "https://www.youthtech.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 1,
+    "industry": "Technology",
+    "contact_person": "Richard Jhonnsen",
+    "email": "info@youthtech.com"
+  },
+  {
+    "name": "Finance First",
+    "address": "111 Wall Street, New York, NY 10005",
+    "phone_number": "(212) 555-6789",
+    "website_url": "https://www.financefirst.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 1,
+    "industry": "Finance",
+    "contact_person": "Anna Davis",
+    "email": "info@financefirst.com"
+  },
+  {
+    "name": "Finance First",
+    "address": "111 Wall Street, New York, NY 10005",
+    "phone_number": "(212) 555-6789",
+    "website_url": "https://www.financefirst.com",
+    "image_icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s",
+    "membership_level": 1,
+    "industry": "Finance",
+    "contact_person": "Anna Davis",
+    "email": "info@financefirst.com"
+  }
+]

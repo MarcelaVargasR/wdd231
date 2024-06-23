@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BizzCo</title>
+    <meta name="author" content="Marcela Vargas" />
+    <meta
+      name="description"
+      content="This is a website for a chamber of commerce."
+    />
+    <meta property="og:title" content="BizzCo website" />
+    <meta property="og:type" content="commerce" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:url" content="" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-commerce.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/members.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <div class="nav-info-container">
+          <div class="logo-image">
+            <img
+              src="./images/header-logo.JPG"
+              alt="logo"
+              width="250"
+              height="70"
+            />
+          </div>
+          <!-- <div class="day-night-icon">
+            <img
+              src="./images/day-night-mode.webp"
+              alt="day-night-mode"
+              width="55"
+              height="55"
+            />
+          </div> -->
+          <button id="menu"></button>
+        </div>
+        <nav class="navigation">
+          <a href="./directory.html" title="Home">Home</a>
+          <a href="#" title="Directory">Directory</a>
+          <a href="#" title="Home">Join</a>
+          <a href="#" title="Home">Discover</a>
+        </nav>
+      </div>
+      <!-- <div class="header-container">
+        <div class="header-title-info">
+          <h1 class="header-title">
+            Empowering Businesses to Thrive in BizzCo
+          </h1>
+          <p class="header-subtitle">
+            Welcome to BizzCo, the leading chamber of commerce dedicated to
+            supporting Businesses and fostering growth in our community.
+          </p>
+          <button class="header-bttn" type="button">Keynote Tickets</button>
+        </div>
+        <div class="header-image-container">
+          <img
+            src="./images/gente-negocios-da-mano-reunion_554837-882.jpg"
+            alt="header-image"
+            width="500"
+            height="400"
+          />
+        </div>
+      </div> -->
+    </header>
+    <main>
+      <!-- <section class="home-cards">
+        <div class="card-info">
+          <span class="card-title-home">Events</span>
+        </div>
+        <div class="card-info">
+          <span class="card-title-home">Current Weather</span>
+          <div class="weather-content">
+            <div class="weather-img">
+              <img
+                src="./images/cloudy.png"
+                alt="weather-icon"
+                width="50"
+                height="50"
+              />
+            </div>
+            <div class="weather-info">
+              <ul>
+                <li>75 F</li>
+                <li>Party Cloudy</li>
+                <li>Hight: 85</li>
+                <li>Low: 52</li>
+                <li>Humidity: 34%</li>
+                <li>Sunrise: 7:30am</li>
+                <li>Sunset: 6:59pm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-title-home">Weather Forecast</span>
+        </div>
+      </section> -->
+      <!-- grid -->
+      <section>
+        <div class="container-center" id="members-view-style">
+          <button class="button" id="grid">Grid</button>
+          <button class="button" id="list">List</button>
+        </div>
+        <div class="flex-container" id="members"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="bizzco-column">
+        <p><span>BizzCo</span></p>
+        <p>10 Rue De La Paix</p>
+        <p>BizzCo, Mail 999</p>
+        <p>info@bizzco.org</p>
+        <p>(223) 555-2300</p>
+      </div>
+      <div class="social-column">
+        <img src="./images/youtube-icon.png" alt="youtube-icon" />
+        <img src="./images/facebook-icon.png" alt="facebook-icon" />
+        <img src="./images/instagram-icon.png" alt="Instagram-icon" />
+      </div>
+      <div class="info-column">
+        <p>WDD231 Class Project</p>
+        <p>Lilian Marcela Vargas</p>
+        <p id="currentyear">BizzCo</p>
+        <p id="lastModified">Last Modification:</p>
+      </div>
+    </footer>
+  </body>
+</html>
