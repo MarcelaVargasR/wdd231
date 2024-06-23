@@ -316,7 +316,7 @@ body{
 
 .footer{
     flex-direction: row;
-    gap: 100px;
+    gap: 400px;
     padding-inline: 10%;
 }
 
