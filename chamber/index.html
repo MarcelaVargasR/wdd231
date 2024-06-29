@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber of Commerce bizzco Page</title>
+    <meta name="author" content="Lilian Marcela Vargas" />
+    <meta
+      name="description"
+      content="This is a website for a chamber of commerce."
+    />
+    <meta property="og:title" content="BizzCo website" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://marcelavargasr.github.io/wdd231/chamber/images/header-logo.JPG"
+    />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="400" />
+    <meta
+      property="og:url"
+      content="https://marcelavargasr.github.io/wdd231/chamber/directory.html"
+    />
+    <link rel="icon" href="./images/favicon-commerce.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <div class="nav-info-container">
+          <div class="logo-image">
+            <img
+              src="./images/logo-bizz-1.webp"
+              alt="logo"
+              width="250"
+              height="70"
+            />
+          </div>
+          <button aria-label="Submit" id="menu"></button>
+        </div>
+        <nav class="navigation">
+          <a href="./directory.html" title="Home">Home</a>
+          <a href="#" title="Directory">Directory</a>
+          <a href="#" title="Home">Join</a>
+          <a href="#" title="Home">Discover</a>
+        </nav>
+      </div>
+      <div class="header-image-bizzco">
+        <div class="header-image-info">
+          <p class="header-title">
+            Empowering Businesses, Strengthening comunities
+          </p>
+          <p class="header-prg">
+            Welcome to BizzCo, the leading chamber of commerce dedicated to
+            fostering growth and collaboration within our vibrant community.
+          </p>
+          <button class="bttn-header" type="button">Discover</button>
+          <button class="bttn-header" type="button">Join</button>
+        </div>
+        <div class="clip-path"></div>
+        <img
+          src="./images/bizzco-header.jpg"
+          alt="header-image"
+          width="500"
+          height="400"
+        />
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="event-section">
+          <div class="event-title">
+            <p>Upcoming</p>
+            <span>EVENTS</span>
+            <p>
+              Stay Updated on the latest community events and important dates.
+            </p>
+          </div>
+          <div class="event-card">
+            <div class="event-info">
+              <p class="line">
+                <img
+                  src="./images/clock.png"
+                  alt="clock"
+                  width="15"
+                  height="15"
+                />
+                45 min
+              </p>
+              <span class="event-card-title">Unlock Your Potencial</span>
+              <p>
+                Discover the success stories of local busimesses that are
+                thriving
+              </p>
+            </div>
+            <div class="event-info">
+              <p class="line">
+                <img
+                  src="./images/clock.png"
+                  alt="clock"
+                  width="15"
+                  height="15"
+                />
+                45 min
+              </p>
+              <span class="event-card-title">Master Your Skills</span>
+              <p>
+                Get the latest updates and news from our chamber of commerce
+              </p>
+            </div>
+            <div class="event-info">
+              <p class="line">
+                <img
+                  src="./images/clock.png"
+                  alt="clock"
+                  width="15"
+                  height="15"
+                />
+                45 min
+              </p>
+              <span class="event-card-title">Boost Your Business</span>
+              <p>
+                Explore the achievements and contributions of our community
+                members
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- weather -->
+      <div id="weather"></div>
+      <!-- grid -->
+      <section>
+        <div class="container-center" id="members-view-style">
+          <button aria-label="Submit Form" class="button" id="grid">
+            Grid
+          </button>
+          <button aria-label="Submit Form" class="button" id="list">
+            List
+          </button>
+        </div>
+        <div class="flex-container" id="members"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="bizzco-column">
+        <p><span>BizzCo</span></p>
+        <p>10 Rue De La Paix</p>
+        <p>BizzCo, Mail 999</p>
+        <p>info@bizzco.org</p>
+        <p>(223) 555-2300</p>
+      </div>
+      <div class="social-column">
+        <img
+          src="./images/youtube-icon.png"
+          alt="youtube-icon"
+          width="50"
+          height="50"
+        />
+        <img
+          src="./images/facebook-icon.png"
+          alt="facebook-icon"
+          width="50"
+          height="50"
+        />
+        <img
+          src="./images/instagram-icon.png"
+          alt="Instagram-icon"
+          width="50"
+          height="50"
+        />
+      </div>
+      <div class="info-column">
+        <p>WDD231 Class Project</p>
+        <p>Lilian Marcela Vargas</p>
+        <p id="currentyear">BizzCo</p>
+        <p id="lastModified">Last Modification:</p>
+      </div>
+    </footer>
+  </body>
+</html>
