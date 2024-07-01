@@ -43,8 +43,8 @@ document.getElementById(
 
 // Weather Section
 const mytown = document.querySelector("#town");
-const myDescription = document.querySelector("#description");
-const myTemperature = document.querySelector("#temperature");
+const myDescription = document.querySelector("#description-weather");
+const myTemperature = document.querySelector("#temperature-weather");
 const myGraphic = document.querySelector("#graphic");
 
 const forestCast = document.querySelector("#forestCast");
