@@ -6,7 +6,6 @@ const description = document.querySelector('#description');
 const apiKey = "1ca326ae32c593ce6698b857e803be2e";
 const latitude = "13.67220960216594"
 const longitude ="-89.2893218777607"
-13.67220960216594, -89.2893218777607
 
 const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
