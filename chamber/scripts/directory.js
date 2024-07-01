@@ -1,7 +1,5 @@
 async function getMembers() {
-  const response = await fetch(
-    "https://raw.githubusercontent.com/MarcelaVargasR/wdd231/main/chamber/data/members.json"
-  );
+  const response = await fetch("https://raw.githubusercontent.com/MarcelaVargasR/wdd231/main/chamber/data/members.json");
   const members = await response.json();
   return members;
 }
@@ -10,11 +8,6 @@ async function renderMember() {
   const membersContainer = document.getElementById("members");
   const membersData = await getMembers();
   const membersHtml = membersData
-    .filter(
-      ({ membership_level }) => membership_level === 3 || membership_level === 2
-    )
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 3) 
     .map(
       ({
         name,
@@ -49,6 +42,7 @@ async function renderMember() {
         </div>
         `
     )
+    
     .join("");
 
   membersContainer.innerHTML = membersHtml;

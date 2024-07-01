@@ -47,10 +47,16 @@ const myDescription = document.querySelector("#description");
 const myTemperature = document.querySelector("#temperature");
 const myGraphic = document.querySelector("#graphic");
 
-const forestCast = document.querySelector('#forestCast');
-const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-const myURlForecast = `//api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+const forestCast = document.querySelector("#forestCast");
+const daysOfWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 const apiKey = "1ca326ae32c593ce6698b857e803be2e";
 const latitude = "34.05190227968152";
@@ -58,10 +64,11 @@ const longitude = "-118.33213877275458";
 
 async function apiFetch() {
   const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+  const myURlForecast = `//api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
 
   try {
     const response = await fetch(myURL);
-    const forestCastResponse = await fetch(myURlForecast)
+    const forestCastResponse = await fetch(myURlForecast);
     if (response.ok && forestCastResponse.ok) {
       const data = await response.json();
       const dataF = await forestCastResponse.json();
@@ -71,7 +78,6 @@ async function apiFetch() {
 
       displayResults(data);
       displayForestCast(dataF);
-
     } else {
       throw Error(await response.text());
       throw Error(await forestCastResponse.text());
@@ -90,48 +96,35 @@ function displayResults(data) {
   myGraphic.setAttribute("alt", data.weather[0].description);
 }
 
-let timing = (sunrise_or_sunset) => {
-  const date = new Date(sunrise_or_sunset * 1000);
-  const hrs = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-
-  const formatting = `${hrs.toString().padStart(2, '0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
-  return formatting
-}
-
 function displayForestCast(data) {
-  const tomorrowTemp = document.createElement('p');
-  const tempTomorrow = converterTem(data.list[4].main.temp)
+  const tomorrowTemp = document.createElement("p");
+  const tempTomorrow = converterTem(data.list[4].main.temp);
   const getDay = selectDay(data.list[4].dt);
   tomorrowTemp.textContent = `${getDay}: ${tempTomorrow}`;
-  placeForecast.appendChild(tomorrowTemp);
+  forestCast.appendChild(tomorrowTemp);
 
-  const dayAfterTomorrow = document.createElement('p');
-  const temp2 = converterTem(data.list[12].main.temp)
+  const dayAfterTomorrow = document.createElement("p");
+  const temp2 = converterTem(data.list[12].main.temp);
   const getDay2 = selectDay(data.list[12].dt);
   dayAfterTomorrow.textContent = `${getDay2}: ${temp2}`;
-  placeForecast.appendChild(dayAfterTomorrow);
+  forestCast.appendChild(dayAfterTomorrow);
 
-  const dayAfterTomorro2 = document.createElement('p');
-  const temp3 = converterTem(data.list[20].main.temp)
+  const dayAfterTomorro2 = document.createElement("p");
+  const temp3 = converterTem(data.list[20].main.temp);
   const getDay3 = selectDay(data.list[20].dt);
   dayAfterTomorro2.textContent = `${getDay3}: ${temp3}`;
-  placeForecast.appendChild(dayAfterTomorro2);
-
+  forestCast.appendChild(dayAfterTomorro2);
 }
 
 let converterTem = (value) => {
-  let result = (value - 273.15) * 9/5 + 32;
+  let result = ((value - 273.15) * 9) / 5 + 32;
   return `${Math.round(result)}  ℉`;
-}
+};
 
 let selectDay = (value) => {
   const day = new Date(value * 1000);
   const dayText = daysOfWeek[day.getDay()];
   return dayText;
-}
-
-
+};
 
 apiFetch();
