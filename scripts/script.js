@@ -113,12 +113,17 @@ function renderCourses(_coursesData) {
   const courses = document.getElementById("courses");
   const totalCredits = document.getElementById("total-credits");
   const coursesHtml = _coursesData
-    .map((course) => {
-      if (course.completed == true) {
-        return `<li class="label bg-secondary">${course.subject} ${course.number}</li>`;
-      } else {
-        return `<li class="label">${course.subject} ${course.number}</li>`;
-      }
+    .map((course, index) => {
+
+      // if (course.completed == true) {
+      //   return `<li class="label bg-secondary" id="${index}">${course.subject} ${course.number}</li>`;
+      // } else {
+      //   return `<li class="label" id="${index}">${course.subject} ${course.number}</li>`;
+      // }
+
+      const classesToApply = course.completed ? "label bg-secondary" : "label"
+      return `<li class="${classesToApply}" id="${index}">${course.subject} ${course.number}</li>`;
+
     })
     .join("");
 
@@ -126,6 +131,18 @@ function renderCourses(_coursesData) {
 
   const totalCreditsRequired = _coursesData.reduce((total, course) => total + course.credits, 0);
   totalCredits.innerHTML = totalCreditsRequired;
+
+  courses.addEventListener("click",(event)=>{
+    const courseIndex = event.target.id;
+
+    if (isNaN(courseIndex)) {
+      return
+    }
+
+    const course = coursesData[courseIndex];
+    displayCourseDetails(course)
+
+  })
 
 }
 
@@ -147,17 +164,41 @@ filterContainer.addEventListener("click", (event) => {
   }
 
   if (event.target.id === "filter-cse") {
-    const filterCse = coursesData.filter((course)=>{
+    const filterCse = coursesData.filter((course) => {
       return course.subject === "CSE";
-    })
+    });
     renderCourses(filterCse);
   }
 
   if (event.target.id === "filter-wdd") {
-    const filterWdd = coursesData.filter((course)=>{
+    const filterWdd = coursesData.filter((course) => {
       return course.subject === "WDD";
-    })
+    });
     renderCourses(filterWdd);
   }
 });
 
+// ///////////////////////////////////////////////////////
+// DIALOG
+
+function displayCourseDetails(course) {
+  const courseDetails = document.getElementById("course-details");
+
+  courseDetails.innerHTML = `
+  <button id="closeModal">X</button>
+  <h2>${course.subject} ${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>:${course.credits}</p>
+  <p><strong>Certificate</strong>:${course.certificate}</p>
+  <p><strong>Description:</strong>${course.description}</p>
+  <p><strong>Technology</strong>: ${course.technology.join(", ")}</p>
+  `;
+
+  courseDetails.showModal();
+
+  const closeModal = document.querySelector("#closeModal");
+  console.log(closeModal);
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
