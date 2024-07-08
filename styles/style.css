@@ -192,6 +192,7 @@ body{
     justify-content: center;
     background-color: #ccc;
     border: 1px solid #999;
+    transition: trasform 0.3s ease linear 0s;
 }
 
 .label.small{

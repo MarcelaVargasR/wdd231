@@ -114,36 +114,35 @@ function renderCourses(_coursesData) {
   const totalCredits = document.getElementById("total-credits");
   const coursesHtml = _coursesData
     .map((course, index) => {
-
       // if (course.completed == true) {
       //   return `<li class="label bg-secondary" id="${index}">${course.subject} ${course.number}</li>`;
       // } else {
       //   return `<li class="label" id="${index}">${course.subject} ${course.number}</li>`;
       // }
 
-      const classesToApply = course.completed ? "label bg-secondary" : "label"
+      const classesToApply = course.completed ? "label bg-secondary" : "label";
       return `<li class="${classesToApply}" id="${index}">${course.subject} ${course.number}</li>`;
-
     })
     .join("");
 
   courses.innerHTML = coursesHtml;
 
-  const totalCreditsRequired = _coursesData.reduce((total, course) => total + course.credits, 0);
+  const totalCreditsRequired = _coursesData.reduce(
+    (total, course) => total + course.credits,
+    0
+  );
   totalCredits.innerHTML = totalCreditsRequired;
 
-  courses.addEventListener("click",(event)=>{
+  courses.addEventListener("click", (event) => {
     const courseIndex = event.target.id;
 
     if (isNaN(courseIndex)) {
-      return
+      return;
     }
 
     const course = coursesData[courseIndex];
-    displayCourseDetails(course)
-
-  })
-
+    displayCourseDetails(course);
+  });
 }
 
 renderCourses(coursesData);
@@ -202,3 +201,4 @@ function displayCourseDetails(course) {
     courseDetails.close();
   });
 }
+// ////////////////////////////////////////////////////////////////
