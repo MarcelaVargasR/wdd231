@@ -324,7 +324,7 @@ button{
 
 .footer {
   background-color: var(--primary-color);
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   gap: 10px;

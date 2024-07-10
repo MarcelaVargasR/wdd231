@@ -1,113 +1,157 @@
-*,
-*::after,
-*::before {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-/* members selection */
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
+body {
+  background: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* form */
+.form-section {
+  width: 100vh;
+  margin-block: 80px;
+  margin-inline: 40px;
+  max-width: 100%;
+  background-color:#d3e3fa;
+  padding: 30px;
   border-radius: 10px;
-  z-index: 10;
-  background-color: #011f5b;
-  color: white;
-  width: 100%;
-  max-width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.5);
 }
 
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #add8e6;
-    padding-inline: 30px;
-    padding-block: 40px;
-
-}
-
-.modal-header-title {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-}
-
-.modal-body-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding-inline: 20px;
-  padding-block: 20px;
-  border: 1px solid greenyellow;
-}
-
-.modal-info {
-  align-items: center;
-  justify-content: center;
-  background-color: #00416a;
-  border: 1px solid #add8e6;
-  padding-inline: 10px;
-  padding-block: 20px;
+.fieldset {
+  background-color: rgba(255, 255, 255, 0.845);
   border-radius: 10px;
-  height: 375px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-style: none;
+  border: 1px solid #00416a;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.legend{
+    font-size: 24px;
+    font-weight: 700;
+    color: #00416a;
 }
 
-.modal-body {
-  padding-top: 70px;
-  padding-inline: 10px;
-  text-align: justify;
-  font-size: 18px;
-}
-
-.button-open{
-    background-color: #00416a;
+.label{
+    font-size: 18px;
+    color: #00416a;
+    padding-bottom: 10px;
     cursor: pointer;
-    padding: 10px 20px;
-    color: white;
-    font-size: 20px;
-    border: none;
+}
+
+.input{
+    width: 100%;
+    font-weight: 400;
+    padding: 10px;
+    border: 1px solid #00416a;
     border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
 }
 
-#overlay {
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.openbttn{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color:#87cee6;
+    color:#04273d;
+    cursor: pointer;
+}
+
+.submitbttn{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #00416a;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+}
+
+/* modal */
+
+.dialog {
+  background-color:#00416a;
+  padding: 20px;
+  border: 1px solid #00416a;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  left: 10%;
+  top: 10%;
+}
+
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dialog-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-color:#5f9fff;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.dialog-card {
+    padding-block: 40px;
+    padding-inline: 40px;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-  transition: 200ms ease-in-out;
 }
 
-#overlay.active{
-opacity: 1;
-pointer-events: all;
+.dialog-card-title {
+  align-self: center;
+  color:white;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.dialog-bttn {
+  color:white;
+  font-size: 30px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.dialog-card-subtitle{
+    color:#00416a;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.dialog-card-content{
+    font-size: 20px;
+    color:black;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 769px) {
+    .form-section{
+        margin-inline: 30%;
+
+    }
+
+    .dialog-card-container{
+        flex-direction: row;
+    }
 }

@@ -29,15 +29,15 @@
       />
       <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
       <link rel="stylesheet" href="./styles/style.css" />
-      <link rel="stylesheet" href="./styles/join.css">
+      <link rel="stylesheet" href="./styles/join.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
       />
-      <script src="scripts/scripts.js" defer></script>
-      <script src="./scripts/modals.js" defer></script>
+      <script src="scripts/home.js" defer></script>
+      <script src="./scripts/join.js" defer></script>
     </head>
   </head>
   <body>
@@ -61,176 +61,144 @@
           <a href="#" title="Discover">Discover</a>
         </nav>
       </div>
-      <div class="header-image-bizzco">
-        <div class="header-image-info">
-          <p class="header-title">
-            Empowering Businesses, Strengthening comunities
-          </p>
-          <p class="header-prg">
-            Welcome to BizzCo, the leading chamber of commerce dedicated to
-            fostering growth and collaboration within our vibrant community.
-          </p>
-          <button class="bttn-header" type="button">Discover</button>
-          <button class="bttn-header" type="button">Join</button>
-        </div>
-        <div class="clip-path"></div>
-        <img
-          src="./images/header-img-new.webp"
-          alt="header-image"
-          width="500"
-          height="400"
-        />
-      </div>
     </header>
     <main>
-      <section>
+      <section class="form-section">
         <form action="./thankyou.html" method="get">
-          <label for="first-name" title="ApplicantsFirstName"
-            >First Name:</label
-          >
-          <input
-            type="text"
-            id="first-name"
-            name="firstName"
-            title="ApplicantsFirstName"
-            autocomplete="given-name"
-            required
-          />
-          <br />
-          <label for="last-name" title="ApplicantsLastName">Last Name:</label>
-          <input
-            type="text"
-            id="last-name"
-            name="lastName"
-            title="ApplicantsLastName"
-            autocomplete="family-name"
-            required
-          />
-          <br />
-          <label for="organization-title" title="ApplicantsOrganizationalTitle"
-            >Organizational Title:</label
-          >
-          <input
-            type="text"
-            id="organization-title"
-            name="organizationTitle"
-            title="ApplicantsOrganizationalTitle"
-            autocomplete="organization-title"
-            pattern="[A-Za-z\s-]{7,}"
-            required
-          />
-          <br />
-          <label for="email" title="ApplicantsEmailAddress">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            title="ApplicantsEmailsAddress"
-            autocomplete="email"
-            placeholder="email@gmail.com"
-            required
-          />
-          <br />
-          <label for="mobile" title="ApplicantsMobilesPhonesNumber"
-            >Mobile Phone:</label
-          >
-          <input
-            type="tel"
-            id="mobile"
-            name="mobile"
-            title="ApplicantsMobilesPhonesNumber"
-            autocomplete="tel"
-            required
-          />
-          <br />
-          <label for="organization" title="Business/Organization's Name"
-            >Organization:</label
-          >
-          <input
-            type="text"
-            id="organization"
-            name="organization"
-            title="Business/Organization's Name"
-            autocomplete="organization"
-            required
-          />
-          <br />
-          <label for="membershiplevel" title="Mmebership Level"
-            >Membership Level:
-            <select name="membership-level" title="Mmebership Level" required>
-              <option value=""></option>
-              <option value="no-membership">NP Membership (No Fee)</option>
-              <option value="bronze">Bronze Membership</option>
-              <option value="silver">Silver Membership</option>
-              <option value="gold">Gold Membership</option>
-            </select>
-          </label>
-          <button class="button-open" data-modal-target="#modal">
-            Learn More
-          </button>
-          <div class="modal active" id="modal">
-            <div class="modal-header-container">
-              <h3 class="modal-header-title">Our subcription:</h3>
-              <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-body-container">
-              <div class="modal-info">
-                <span class="title">NP Membership</span>
-                <p class="modal-body">
-                  This membership level is for non profit organizations and
-                  there is no fee. The members of the organization will receive
-                  a gift for access and tutorials. Also, can access for free
-                  events and activities.
-                </p>
-              </div>
-              <div class="modal-info">
-                <span class="title">Bronze</span>
-                <p class="modal-body">
-                  This membership level provides basic access to BizzCo's
-                  premium services and resources. You can join the BizzCo
-                  community and participate in our events and activities.
-                </p>
-              </div>
-              <div class="modal-info">
-                <span class="title">Silver</span>
-                <p class="modal-body">
-                  This membership level offers advanced access to BizzCo's
-                  premium services and resources. You can join the BizzCo
-                  community and participate in our events and activities
-                </p>
-              </div>
-              <div class="modal-info">
-                <span class="title">Gold</span>
-                <p class="modal-body">
-                  This membership level offers unlimited access to BizzCo's
-                  premium services and resources. You can join the BizzCo
-                  community and participate in our events and activities, as
-                  well as access to exclusive resources and benefits.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="overlay"></div>
-          <br />
-          <label title="Business/Organization's Description">
-            Organization Description:
-            <textarea
-              name="organizationDescription"
-              title="Business/Organization's Description"
-            ></textarea>
-          </label>
-          <br />
+          <!-- personal information -->
+          <fieldset class="fieldset">
+            <legend class="legend">Personal Information</legend>
+            <label class="label" title="ApplicantsFirstName">First Name:</label>
+            <input
+            class="input"
+              type="text"
+              id="first-name"
+              name="firstName"
+              title="ApplicantsFirstName"
+              autocomplete="given-name"
+              required
+            />
+            <br />
+            <label class="label" for="last-name" title="ApplicantsLastName">Last Name:</label>
+            <input
+            class="input"
+              type="text"
+              id="last-name"
+              name="lastName"
+              title="ApplicantsLastName"
+              autocomplete="family-name"
+              required
+            />
+            <br />
+            <label class="label" for="email" title="ApplicantsEmailAddress">Email:</label>
+            <input
+            class="input"
+              type="email"
+              id="email"
+              name="email"
+              title="ApplicantsEmailsAddress"
+              autocomplete="email"
+              placeholder="email@gmail.com"
+              required
+            />
+            <br />
+            <label class="label" for="mobile" title="ApplicantsMobilesPhonesNumber"
+              >Mobile Phone:</label
+            >
+            <input
+            class="input"
+              type="tel"
+              id="mobile"
+              name="mobile"
+              title="ApplicantsMobilesPhonesNumber"
+              autocomplete="tel"
+              required
+            />
+          </fieldset>
+          <!-- Business information -->
+          <fieldset class="fieldset">
+            <legend class="legend">Business Information</legend>
+            <label
+            class="label"
+              for="organization-title"
+              title="ApplicantsOrganizationalTitle"
+              >Organizational Title:</label
+            >
+            <input
+            class="input"
+              type="text"
+              id="organization-title"
+              name="organizationTitle"
+              title="only accept alpha characters, hyphens, and spaces with a minimum of seven characters"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\s-]{7,}"
+              required
+            />
+            <br />
+            <label class="label" for="organization" title="Business/Organization's Name"
+              >Business or Organization Name:</label
+            >
+            <input
+            class="input"
+              type="text"
+              id="organization"
+              name="organization"
+              title="Business/Organization's Name"
+              autocomplete="organization"
+              required
+            />
+            <br />
+            <label class="label" title="Business/Organization's Description">
+              Description:
+              <textarea
+              class="input"
+                name="organizationDescription"
+                title="Business/Organization's Description"
+                id="description-business"
+                placeholder="Briefly Description"
+                rows="10"
+                cols="30"
+              ></textarea>
+            </label>
+          </fieldset>
+          <!-- membership section -->
+          <fieldset class="fieldset">
+            <legend class="legend">Membership Section</legend>
+            <label class="label" for="membershiplevel" title="Mmebership Level"
+              >Membership Level:
+              <select
+              class="input"
+                id="memberships"
+                name="membership-level"
+                title="Membership Level"
+                required
+              >
+                <option value="">Please Choose a Option</option>
+                <optgroup>
+                  <option value="no-membership">NP Membership (No Fee)</option>
+                  <option value="bronze">Bronze Membership</option>
+                  <option value="silver">Silver Membership</option>
+                  <option value="gold">Gold Membership</option>
+                </optgroup>
+              </select>
+            </label>
+            <!-- modal -->
+            <dialog class="dialog" id="dialog">
+              
+            </dialog>
+            <button class="openbttn" id="openBttn" type="button">Learn More</button>
+          </fieldset>
+          <!-- timestamp -->
           <input type="hidden" name="timestamp" id="timestamp" />
-          <button>
-            <input type="submit" value="Submit" />
-          </button>
+          <input
+          class="submitbttn"
+            type="submit"
+            id="button-submitt"
+            name="submit"
+            value="Submit"
+          />
         </form>
       </section>
-      <!-- members modal -->
-      <!-- <section>
-        <div id="membership-button" class="member-modal"></div>
-        <dialog id="membership-details"></dialog>
-      </section> -->
     </main>
     <!-- footer -->
     <footer class="footer">
