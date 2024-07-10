@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" >
       <title>Chamber of Commerce bizzco Page</title>
@@ -38,7 +37,6 @@
       />
       <script src="scripts/home.js" defer></script>
       <script src="scripts/join.js" defer></script>
-    </head>
   </head>
   <body>
     <header>
@@ -164,24 +162,24 @@
           <!-- membership section -->
           <fieldset class="fieldset">
             <legend class="legend">Membership Section</legend>
-            <label class="label" for="membershiplevel" title="Mmebership Level"
-              >Membership Level:
+            <label class="label" for="membershiplevel" title="Membership Level"
+              >Membership Level:</label>
               <select
               class="input"
-                id="memberships"
+                id="membershiplevel"
                 name="membership-level"
                 title="Membership Level"
                 required
               >
                 <option value="">Please Choose a Option</option>
-                <optgroup>
+                <optgroup label="membership types">
                   <option value="no-membership">NP Membership (No Fee)</option>
                   <option value="bronze">Bronze Membership</option>
                   <option value="silver">Silver Membership</option>
                   <option value="gold">Gold Membership</option>
                 </optgroup>
               </select>
-            </label>
+            
             <!-- modal -->
             <dialog class="dialog" id="dialog">
               
