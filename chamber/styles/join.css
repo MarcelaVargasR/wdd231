@@ -10,8 +10,14 @@ body {
 }
 
 /* form */
+main{
+  max-width: 100%;
+  width: 100%;
+}
+
 .form-section {
-  width: 100vh;
+  border: 5px solid black;
+  /* width: 100%; */
   margin-block: 80px;
   margin-inline: 40px;
   max-width: 100%;

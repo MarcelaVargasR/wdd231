@@ -29,8 +29,8 @@
 
 .user-info{
     background-color: hsla(0, 0%, 100%, 0.551);
-    width: 50%;
-    margin-inline: 25%;
+    /* width: 50%; */
+    margin-inline: 20px;
     max-width: 100%;
     border-radius: 10px;
     padding-block: 30px;
@@ -38,7 +38,7 @@
 
 .submit-info{
     text-align: left;
-    padding-left: 50px;
+    padding-left: 40px;
     margin-bottom: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: capitalize;
@@ -47,4 +47,11 @@
 .footer{
     margin-top: 0;
     margin-bottom: 0;
+}
+
+@media screen and (min-width: 769px){
+    .user-info{
+        width: 50%;
+        margin-inline: 25%;
+    }
 }
