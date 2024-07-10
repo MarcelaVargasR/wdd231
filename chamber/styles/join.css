@@ -69,6 +69,13 @@ main{
     cursor: pointer;
 }
 
+.openbttn:hover{
+  background-color: #00416a;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
 .submitbttn{
     font-size: 20px;
     font-weight: 700;
@@ -80,6 +87,14 @@ main{
     cursor: pointer;
     border-style: none;
 }
+
+.submitbttn:hover{
+  background-color: #1ca617;
+  color: white;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 
 /* modal */
 
