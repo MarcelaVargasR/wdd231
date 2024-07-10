@@ -10,6 +10,10 @@ body {
 }
 
 /* form */
+h1{
+  display: none;
+}
+
 main{
   max-width: 100%;
   width: 100%;
