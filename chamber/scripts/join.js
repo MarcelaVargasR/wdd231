@@ -68,23 +68,12 @@ showButton.addEventListener("click", () => {
 
 displayMembershipInfo();
 
-// function displayMembershipDetails(membership) {
-//     const membershipLevel = document.getElementById("membership-details");
+// ///////////////
+// TIMESTAMP
+const form = document.querySelector('form');
+const timestampInput = document.querySelector('#timestamp');
 
-//     membershipLevel.innerHTML = `
-//       <button id="closeModal">X</button>
-//       <h2>Our Membership Levels</h2>
-//       <h3>Membership Level ${membership.level}: ${membership.name}</h3>
-//       <p>${membership.description}</p>
-//       `;
-
-//     membershipLevel.showModal();
-
-//     const closeModal = document.querySelector("#closeModal");
-
-//     closeModal.addEventListener("click", () => {
-//       membershipLevel.close();
-//     });
-//   }
-
-//   displayMembershipDetails();
+form.addEventListener('submit', function(event) {
+    const today = new Date().toString();
+    timestampInput.value = today;
+});

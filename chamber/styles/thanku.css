@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #d3e3fa;
+    text-align: center;
+    width: 80%;
+    max-width: 100%;
+    margin-inline: 10%;
+    padding-block: 150px;
+    margin-block: 50px;
+}
+
+.ths-title{
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.ths-sub{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.user-info{
+    background-color: hsla(0, 0%, 100%, 0.551);
+    width: 50%;
+    margin-inline: 25%;
+    max-width: 100%;
+    border-radius: 10px;
+    padding-block: 30px;
+}
+
+.submit-info{
+    text-align: left;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.footer{
+    margin-top: 0;
+    margin-bottom: 0;
+}
