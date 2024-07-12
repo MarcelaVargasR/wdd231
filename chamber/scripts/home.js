@@ -10,9 +10,9 @@ hamButton.addEventListener("click", () => {
 
 // ///////////////////////////////////////////////////////////////////////////
 // CURRENT YEAR
-const year = document.querySelector("#currentyear");
+const yearOfCalendar = document.querySelector("#currentyear");
 const today = new Date();
-year.innerHTML = `© <span class="highlight">${today.getFullYear()} BizzCo</span>`;
+yearOfCalendar.innerHTML = `© <span class="highlight">${today.getFullYear()} BizzCo</span>`;
 
 // /////////////////////////////////////////////////////////////////////////////
 // LAST UPDATE
@@ -128,3 +128,4 @@ let selectDay = (value) => {
 };
 
 apiFetch();
+

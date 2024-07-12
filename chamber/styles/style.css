@@ -133,6 +133,37 @@ body {
   color: black;
 }
 
+/* discover header */
+.discover{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container{
+  background-color: #5f9fff;
+  max-width: 100%;
+  height: 400px;
+}
+
+.discover-title{
+  display: flex;
+  text-align: center;
+}
+
+.discover-sub{
+  text-align: center;
+}
+
+.svg{
+  display: none;
+}
+
+.discover-image{
+  width: 100%;
+  height: 400px;
+  object-fit:scale-down;
+}
+
 /* MAIN */
 .event-section {
   background-color: #ffd255;
@@ -179,6 +210,211 @@ body {
   margin-block: 5px;
   display: block;
 }
+
+/* main Grid */
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* main grid [blog] */
+.card-blog{
+  background-color: #011f5b;
+  color: white;
+  padding-block: 60px;
+}
+
+.card-blog-content{
+  background-color: rgba(255, 255, 255, 0.803);
+  color: black;
+  margin-block: 10px;
+  margin-inline: 40px;
+  padding-block: 60px;
+  padding-inline: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  box-shadow:  7px 7px 4px -4px rgba(0, 0, 0, 0.55);
+
+}
+
+.card-header-blog{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-bttn{
+  background-color:#00416a;
+  width: 30%;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow:  7px 7px 4px -4px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+
+.blog-bttn:hover{
+  background-color:#5f9fff;
+  cursor: pointer;
+  color: black;
+}
+
+.card-img-blog img{
+  border-radius: 10px;
+  height: 150px;
+}
+
+/* CALENDAR CONTAINER */
+.calendar-back{
+  background-color: #323757;
+  padding-block: 40px;
+
+}
+
+.calendar{
+  background-color: white;
+  margin: auto;
+  width: 380px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.175);
+}
+
+.calendar header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.calendar ul li{
+  width: calc(100% / 7);
+  margin-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+h3{
+  font-weight: 600;
+}
+
+#prev, #next{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#prev::before, #next::before{
+  content: '';
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  border-color: #ccc;
+}
+
+#next::before{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#prev::before{
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+#prev:hover::before,
+#next:hover::before{
+  border-color: #000;
+}
+
+.days{
+  font-weight: 600;
+}
+
+.days li .today{
+color: #fff;
+}
+
+.dates li .today::before{
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.days li .inactive{
+  color:#ccc;
+}
+
+/* DISCOVERY PAGE: POLAROID IMAGES */
+.gallery{
+  background-color: #eee;
+  padding-bottom: 40px;
+}
+
+.gallery-info{
+  width: 90%;
+  margin-block: 20px;
+  margin-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-title{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.gallery-sub{
+  text-align: center;
+  font-size: 16px;
+}
+
+.polaroid{
+  width: 90%;
+  margin-inline: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+}
+
+.polaroid img{
+  width: 100%;
+  max-width: 100%;
+  transition: .5s ease;
+}
+
+.pola-title-container{
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 20px;
+  font-weight: 800;
+}
+
 
 /* current Weather */
 .wether-section {
@@ -333,6 +569,10 @@ button{
   margin-top: 40px;
 }
 
+.footer-discover{
+  margin-top: 0;
+}
+
 .bizzco-column p {
   padding-bottom: 5px;
   font-size: 18px;
@@ -429,5 +669,33 @@ button{
   .social-column{
     display: flex;
     padding-top: 20px;
+  }
+
+  /* discover header */
+  .discover{
+    background-color: #5f9fff;
+    display: flex;
+  }
+  
+  .title-container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    text-align: center;
+  }
+  
+  .svg{
+    width: 47.3%;
+    rotate: -90deg;
+    position: absolute;
+    margin-top: 348px;
+    margin-left: 460px;
+  }
+  
+  .discover-image{
+    width: 50%;
+    max-width: 100%;
+    height: 900px;
+    object-fit: contain;
   }
 }
