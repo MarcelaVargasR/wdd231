@@ -183,13 +183,13 @@ body {
   display: block;
   font-size: 40px;
   margin-block: 7px;
-  color: var(--lighten-color);
+  color: var(--darker-color);
   font-weight: bold;
 }
 
 .event-title p {
   font-size: 16px;
-   color: var(--lighten-color);
+   color: var(--darker-color);
   font-weight: bold;
 }
 
@@ -334,7 +334,7 @@ h3 {
   left: 50%;
   border-style: solid;
   border-width: 0.25em 0.25em 0 0;
-  border-color: #ccc;
+  border-color: var(--darker-color);
 }
 
 #next::before {
@@ -347,7 +347,7 @@ h3 {
 
 #prev:hover::before,
 #next:hover::before {
-  border-color: #000;
+  border-color: var(--second-color);
 }
 
 .days {
