@@ -142,7 +142,8 @@ body {
 }
 
 .title-container {
-  background-color: #5f9fff;
+  background-color: var(--main-color);
+  color: var(--lighten-color);
   max-width: 100%;
   height: 400px;
 }
