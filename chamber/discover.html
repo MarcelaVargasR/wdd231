@@ -37,6 +37,7 @@
       />
       <script src="scripts/home.js" defer></script>
       <script src="./scripts/discover.js" defer></script>
+      <script src="./scripts/visitMessage.js" defer></script>
     </head>
   </head>
   <body>
@@ -45,7 +46,7 @@
         <div class="nav-info-container">
           <div class="logo-image">
             <img
-              src="./images/logo-new-bizzco.webp"
+              src="./images/nav-logo.webp"
               alt="logo"
               width="250"
               height="70"
@@ -70,15 +71,6 @@
             personalized onboarding plan.
           </p>
         </div>
-        <div class="svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-              fill="#ffffff"
-              fill-opacity="1"
-              d="M0,192L48,170.7C96,149,192,107,288,117.3C384,128,480,192,576,224C672,256,768,256,864,229.3C960,203,1056,149,1152,149.3C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-            ></path>
-          </svg>
-        </div>
         <img
           class="discover-image"
           src="./images/d2.png"
@@ -89,6 +81,7 @@
     <!-- main -->
     <main class="grid-container">
       <section class="side-bar">
+        <div class="sidebar" id="visit-message"></div>
         <div class="card-blog">
           <div class="card-blog-content">
             <div class="card-header-blog">
@@ -101,7 +94,7 @@
             </div>
             <div class="card-img-blog">
               <img
-                src="./images/blog.jpg"
+                src="./images/blog.webp"
                 alt="blog"
                 width="200"
                 height="100"
@@ -197,42 +190,71 @@
       <section class="gallery">
         <div class="gallery-info">
           <span class="gallery-title">Explore Our Services</span>
-          <p class="gallery-sub">Welcome to our gallery, where you can discover a wide range of services that cater to your needs. Whether you're looking for products, events, or information, we've got you covered.</p>
+          <p class="gallery-sub">
+            Welcome to our gallery, where you can discover a wide range of
+            services that cater to your needs. Whether you're looking for
+            products, events, or information, we've got you covered.
+          </p>
         </div>
         <div class="polaroid">
-          <img src="./images/g1boostYourBusiness.png" alt="boost-your-business">
+          <img
+            src="./images/g1boostYourBusiness.webp"
+            alt="boost-your-business"
+            loading="lazy"
+          />
           <div class="pola-title-container">
-          <p class="polaroid-title">Boost Your Business</p>
+            <p class="polaroid-title">Boost Your Business</p>
           </div>
         </div>
         <div class="polaroid">
-          <img src="./images/g2certificaciones.png" alt="boost-your-business">
+          <img
+            src="./images/g2certificaciones.webp"
+            alt="boost-your-business"
+            loading="lazy"
+          />
           <div class="pola-title-container">
-          <p class="polaroid-title">Certification</p>
+            <p class="polaroid-title">Certification</p>
           </div>
         </div>
         <div class="polaroid">
-          <img src="./images/g3capacitaciones.png" alt="boost-your-business">
+          <img
+            src="./images/g3capacitaciones.webp"
+            alt="boost-your-business"
+            loading="lazy"
+          />
           <div class="pola-title-container">
-          <p class="polaroid-title">Training</p>
+            <p class="polaroid-title">Training</p>
           </div>
         </div>
         <div class="polaroid">
-          <img src="./images/g4gestionDeProyectos.png" alt="boost-your-business">
+          <img
+            src="./images/g4gestionDeProyectos.webp"
+            alt="boost-your-business"
+            loading="lazy"
+          />
           <div class="pola-title-container">
-          <p class="polaroid-title">Project Management</p>
+            <p class="polaroid-title">Project Management</p>
           </div>
         </div>
         <div class="polaroid">
-          <img src="./images/g5events.png" alt="boost-your-business">
+          <img
+            src="./images/g5events.webp"
+            alt="boost-your-business"
+            loading="lazy"
+          />
           <div class="pola-title-container">
-          <p class="polaroid-title">Events</p>
+            <p class="polaroid-title">Events</p>
           </div>
         </div>
         <div class="polaroid">
-          <img src="./images/g6servicioPersonalizado.png" alt="boost-your-business">
+          <img
+            src="./images/g6servicioPersonalizado.webp"
+            alt="boost-your-business"
+            height="400"
+            loading="lazy"
+          />
           <div class="pola-title-container">
-          <p class="polaroid-title">Customized Support</p>
+            <p class="polaroid-title">Customized Support</p>
           </div>
         </div>
       </section>
