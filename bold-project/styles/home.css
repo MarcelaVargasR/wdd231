@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #f1ddcf;
+  --second-color: #f4c2c2;
+  --darker-color: #100b00;
+  --lighten-color: #eaeaea;
+  --cta-color: #ce2d4f;
+}
+
+p {
+  font-weight: 300;
+  color: var(--darker-color);
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1507297448044-a99b358cd06e?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5em;
+  color: var(--lighten-color);
+}
+.banner .content p {
+  font-size: 1em;
+  color: var(--lighten-color);
+}
+
+.btn {
+  font-size: 1.5em;
+  color: var(--lighten-color);
+  background: var(--cta-color);
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--second-color);
+  color: var(--darker-color);
+  letter-spacing: 5px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.sticky {
+  background: var(--main-color);
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sticky .logo {
+  color: #111;
+}
+
+.sticky .navigation li a {
+  color: #111;
+}
+
+header .logo {
+  color: var(--darker-color);
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: var(--cta-color);
+  font-style: italic;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+header .navigation li a:hover {
+  color: #ff0157;
+}
+
+/* main header section */
+section {
+  padding: 100px;
+}
+
+/* JUST FOR YOU GALLERY MAIN */
+.gallery-title {
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #424242;
+  text-align: center;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+
+  &:hover {
+    flex: 1.5;
+  }
+}
+
+.item-1 {
+  background-image: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TW9kYXxlbnwwfDF8MHx8fDI%3D");
+}
+
+.item-2 {
+  background-image: url("https://images.unsplash.com/photo-1566206091558-7f218b696731?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fE1vZGF8ZW58MHwxfDB8fHwy");
+}
+
+.item-3 {
+  background-image: url("https://images.unsplash.com/photo-1571513722275-4b41940f54b8?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fE1vZGF8ZW58MHwxfDB8fHwy");
+}
+
+.item-4 {
+  background-image: url("https://images.unsplash.com/photo-1632573801508-4ede5a46c4d8?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fE1vZGF8ZW58MHwxfDB8fHwy");
+}
+
+.item-5 {
+  background-image: url("https://images.unsplash.com/photo-1596993100471-c3905dafa78e?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fE1vZGF8ZW58MHwxfDB8fHwy");
+}
+
+/* SECTION WHATS NEW */
+.info-what-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.bttn-new{
+    font-size: 15px;
+    color: var(--lighten-color);
+    background: var(--cta-color);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.bttn-new:hover{
+    background-color: var(--second-color);
+    color: var(--darker-color);
+    letter-spacing: 2px;
+}
+
+/* LARGE VIEW */
+@media screen and (max-width: 768px) {
+  header,
+  header .sticky {
+    padding: 20px 10px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--lighten-color);
+  }
+
+  header .navigation li {
+    margin-left: 0;
+  }
+  header .navigation li a {
+    color: #111;
+    font-size: 1.6em;
+  }
+
+  .menutoggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(https://i.postimg.cc/qq7WKZ1m/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menutoggle.active {
+    background: url(https://i.postimg.cc/yNcK65Gc/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sticky .menutoggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner {
+    object-fit: contain;
+  }
+
+  .banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+  }
+
+  .sticky {
+    padding: 10px 30px;
+  }
+
+  /* Gallery JUST FOR YOU */
+  .item:hover {
+    flex: 1.5;
+  }
+}
