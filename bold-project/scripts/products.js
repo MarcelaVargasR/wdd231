@@ -14,7 +14,7 @@ async function renderProducts(){
                     <img
                     class="img-product"
                     src="${product.image_url}"
-                    alt="img-1"
+                    alt="${product.name}"
                     />
                 </div>
                 <span class="title-product">${product.name}</span>

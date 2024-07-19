@@ -221,7 +221,6 @@ section {
   flex-wrap: wrap;
   gap: 10px;
   color: var(--lighten-color);
-  border: 1px solid black;
 }
 
 .card-product {

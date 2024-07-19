@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #f1ddcf;
+  --second-color: #f4c2c2;
+  --darker-color: #100b00;
+  --lighten-color: #eaeaea;
+  --cta-color: #ce2d4f;
+}
+
+/* BANNER TRENDING */
+.trending-banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1507553532144-b9df5e38c8d1?q=80&w=1826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+p {
+  font-weight: 300;
+  color: var(--darker-color);
+}
+
+.trending-banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.trending-banner .content h2 {
+  font-size: 5em;
+  color: var(--lighten-color);
+}
+.trending-banner .content p {
+  font-size: 1em;
+  color: var(--lighten-color);
+}
+
+/* SHOPPING CARDS CONTAINER */
+.shopping {
+  width: 100%;
+  padding: 0;
+}
+
+.shopping-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping-first-container {
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-title {
+  padding-block: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--darker-color);
+}
+
+.shopping-second-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.shopping-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--second-color);
+  padding-block: 20px;
+  padding-inline: 60px;
+  margin-inline: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .shopping-second-container {
+    justify-content: space-around;
+    gap:10px
+;  }
+
+  .shopping-card {
+    padding-inline: 70px;
+  }
+}
