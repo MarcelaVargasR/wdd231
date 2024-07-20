@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #f1ddcf;
+  --second-color: #f4c2c2;
+  --darker-color: #100b00;
+  --lighten-color: #eaeaea;
+  --cta-color: #ce2d4f;
+}
+
+/* BANNER TRENDING */
+.giftCard-banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.pexels.com/photos/3309666/pexels-photo-3309666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+}
+
+p {
+  font-weight: 300;
+  color: var(--darker-color);
+}
+
+.giftCard-banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.giftCard-banner .content h2 {
+  font-size: 5em;
+  color: var(--lighten-color);
+}
+.giftCard-banner .content p {
+  font-size: 1.5em;
+  color: var(--lighten-color);
+}
+
+/* GIFT CARD CONTAINER */
+.gift-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+    margin-block: 30px;
+}
+
+.gift-card{
+    background-color: white;
+    width: 31%; 
+}
+
+.gift-img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gift-img:hover{
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.637);
+  transition: 0.3s ease-in;
+ 
+}
+
+@media screen and (max-width: 768px){
+    .gift-img{
+      width: 100%;
+      height: auto;
+    }
+
+   
+
+}
