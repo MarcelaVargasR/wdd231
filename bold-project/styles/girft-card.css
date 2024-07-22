@@ -57,7 +57,6 @@ p {
     flex-wrap: wrap;
     justify-content:center;
     gap: 10px;
-    margin-block: 30px;
 }
 
 .gift-card{
@@ -82,7 +81,5 @@ p {
       width: 100%;
       height: auto;
     }
-
-   
 
 }
