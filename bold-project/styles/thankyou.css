@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BANNER TRENDING */
+.giftCard-banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+  }
+  
+  p {
+    font-weight: 300;
+    color: var(--darker-color);
+  }
+  
+  .giftCard-banner .content {
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .giftCard-banner .content h2 {
+    font-size: 5em;
+    color: var(--lighten-color);
+  }
+  .giftCard-banner .content p {
+    font-size: 1.5em;
+    color: var(--lighten-color);
+  }
+
+  /* thank you container */
+
+.container{
+    background-color: #f1ddcf;
+    color: #100b00;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 100%;
+    margin-inline: 10%;
+    padding-block: 150px;
+    margin-block: 50px;
+}
+
+.ths-title{
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.ths-sub{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.user-info{
+    background-color: hsla(0, 0%, 100%, 0.551);
+    /* width: 50%; */
+    margin-inline: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    padding-block: 30px;
+}
+
+.submit-info{
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.footer{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 769px){
+    .user-info{
+        width: 50%;
+        margin-inline: 25%;
+    }
+}
