@@ -102,8 +102,57 @@ p {
   font-weight: 600;
 }
 
-/* BUTTON PRODUCTS CARDS */
+/* MODAL */
+dialog {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  margin-inline: auto;
+}
 
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+  padding: 0.5rem 1rem;
+}
+
+.card-product:hover .btn-learn-more {
+  display: block;
+}
+
+.btn-learn-more {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  background-color: var(--cta-color);
+  color: var(--lighten-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.card-product {
+  position: relative;
+}
+
+.close-bttn{
+  background-color: #777;
+  margin-bottom: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
 @media screen and (max-width: 768px) {
   .shopping-second-container {
