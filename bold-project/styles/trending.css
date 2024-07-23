@@ -102,6 +102,9 @@ p {
   font-weight: 600;
 }
 
+/* BUTTON PRODUCTS CARDS */
+
+
 @media screen and (max-width: 768px) {
   .shopping-second-container {
     justify-content: space-around;

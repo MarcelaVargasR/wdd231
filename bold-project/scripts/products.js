@@ -23,6 +23,7 @@ async function renderProducts() {
                     src="${product.image_url}"
                     alt="${product.name}"
                     />
+                    <button class="btn-learn-more">Learn More</button>
                 </div>
                 <span class="title-product">${product.name}</span>
                 <p class="product-sub">${product.description}</p>
