@@ -11,3 +11,5 @@ function togglemenu(){
     menutoggle.classList.toggle('active');
     navigation.classList.toggle('active');
 };
+
+export {togglemenu}

@@ -322,6 +322,24 @@ section {
     letter-spacing: 2px;
 }
 
+/* VISIT MESSAGE */
+.visit-message{
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  color:var(--darker-color);
+  font-size: 20px;
+  animation-name:glow;
+  animation-duration:.5s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 60px #0d1b2a,0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 60px #0d1b2a,0px 0px 20px #614ad3;}
+}
+
 /* FOOTER */
 .footer{
     background-color: var(--main-color);
